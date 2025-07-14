@@ -18,67 +18,57 @@
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --background: 220 26% 14%;
+    --foreground: 213 31% 91%;
+    --card: 222 84% 5%;
+    --card-foreground: 213 31% 91%;
+    --popover: 222 84% 5%;
+    --popover-foreground: 213 31% 91%;
     --primary: 263 70% 50.4%;
     --primary-foreground: 210 20% 98%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 28% 17%;
+    --muted-foreground: 217 10% 64.9%;
+    --accent: 215 28% 17%;
+    --accent-foreground: 210 20% 98%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 28% 18%;
+    --input: 215 28% 18%;
     --ring: 263 70% 50.4%;
-    --chart-1: 263 70% 50.4%;
-    --chart-2: 198 70% 50%;
-    --chart-3: 142 70% 50%;
-    --chart-4: 47 70% 50%;
-    --chart-5: 0 70% 50%;
-    --chart-1: 263 70% 50.4%;
-    --chart-2: 198 70% 50%;
-    --chart-3: 142 70% 50%;
-    --chart-4: 47 70% 50%;
-    --chart-5: 0 70% 50%;
+    --chart-1: 221 83% 53%;
+    --chart-2: 212 95% 68%;
+    --chart-3: 216 92% 79%;
+    --chart-4: 210 98% 78%;
+    --chart-5: 212 97% 87%;
     --radius: 0.5rem;
   }
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --background: 220 26% 14%;
+    --foreground: 213 31% 91%;
+    --card: 222 84% 5%;
+    --card-foreground: 213 31% 91%;
+    --popover: 222 84% 5%;
+    --popover-foreground: 213 31% 91%;
     --primary: 263 70% 50.4%;
     --primary-foreground: 210 20% 98%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 28% 17%;
+    --muted-foreground: 217 10% 64.9%;
+    --accent: 215 28% 17%;
+    --accent-foreground: 210 20% 98%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 28% 18%;
+    --input: 215 28% 18%;
     --ring: 263 70% 50.4%;
-    --chart-1: 263 70% 50.4%;
-    --chart-2: 198 70% 50%;
-    --chart-3: 142 70% 50%;
-    --chart-4: 47 70% 50%;
-    --chart-5: 0 70% 50%;
-    --chart-1: 263 70% 50.4%;
-    --chart-2: 198 70% 50%;
-    --chart-3: 142 70% 50%;
-    --chart-4: 47 70% 50%;
-    --chart-5: 0 70% 50%;
+    --chart-1: 221 83% 53%;
+    --chart-2: 212 95% 68%;
+    --chart-3: 216 92% 79%;
+    --chart-4: 210 98% 78%;
+    --chart-5: 212 97% 87%;
   }
 }
 
@@ -93,42 +83,22 @@
 
 /* Moondust theme enhancements */
 .moondust-gradient {
-  background: linear-gradient(135deg, hsl(263, 70%, 50.4%) 0%, hsl(198, 70%, 50%) 100%);
+  background: linear-gradient(135deg, hsl(221, 83%, 53%) 0%, hsl(212, 95%, 68%) 100%);
 }
 
 .moondust-card {
-  background: linear-gradient(145deg, hsl(240, 10%, 5%) 0%, hsl(240, 3.7%, 15.9%) 100%);
-  border: 1px solid hsl(240, 3.7%, 20%);
+  background: linear-gradient(145deg, hsl(222, 84%, 4%) 0%, hsl(215, 28%, 17%) 100%);
+  border: 1px solid hsl(215, 28%, 18%);
 }
 
 .moondust-glow {
-  box-shadow: 0 0 20px hsla(263, 70%, 50.4%, 0.3);
+  box-shadow: 0 0 20px hsla(221, 83%, 53%, 0.4);
 }
 
 .moondust-text-gradient {
-  background: linear-gradient(135deg, hsl(263, 70%, 70%) 0%, hsl(198, 70%, 70%) 100%);
+  background: linear-gradient(135deg, hsl(221, 83%, 70%) 0%, hsl(212, 95%, 75%) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Moondust theme enhancements */
-.moondust-gradient {
-  background: linear-gradient(135deg, hsl(263, 70%, 50.4%) 0%, hsl(198, 70%, 50%) 100%);
-}
-
-.moondust-card {
-  background: linear-gradient(145deg, hsl(240, 10%, 5%) 0%, hsl(240, 3.7%, 15.9%) 100%);
-  border: 1px solid hsl(240, 3.7%, 20%);
-}
-
-.moondust-glow {
-  box-shadow: 0 0 20px hsla(263, 70%, 50.4%, 0.3);
-}
-
-.moondust-text-gradient {
-  background: linear-gradient(135deg, hsl(263, 70%, 70%) 0%, hsl(198, 70%, 70%) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
