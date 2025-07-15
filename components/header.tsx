@@ -208,7 +208,7 @@ export function Header() {
   const [currentLanguage, setCurrentLanguage] = React.useState("en");
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/90 shadow-sm">
       <div className="container mx-auto flex h-16 items-center justify-between px-6">
         {/* Logo */}
         <div className="flex items-center">

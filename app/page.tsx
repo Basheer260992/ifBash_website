@@ -20,7 +20,7 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-gradient-to-br from-blue-50 to-white">
         <div className="container mx-auto max-w-6xl">
           <ScrollAnimation className="text-center space-y-8">
             <ScrollAnimation delay={0.2}>
@@ -53,7 +53,7 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="py-16 px-6 bg-secondary/20">
+      <section className="py-16 px-6 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="container mx-auto max-w-6xl">
           <ScrollAnimation className="text-center mb-16">
             <h2 className="text-3xl font-light text-foreground mb-4">Our Expertise</h2>
@@ -141,7 +141,7 @@ export default function Home() {
       </section>
 
       {/* Industries */}
-      <section className="py-16 px-6">
+      <section className="py-16 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <ScrollAnimation className="text-center mb-16">
             <h2 className="text-3xl font-light text-foreground mb-4">Industries We Serve</h2>
@@ -173,7 +173,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 moondust-gradient">
+      <section className="py-20 px-6 bg-gradient-to-r from-blue-600 to-blue-700">
         <div className="container mx-auto max-w-4xl text-center">
           <ScrollAnimation>
             <h2 className="text-4xl font-light text-white mb-6">
@@ -199,7 +199,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 bg-secondary">
+      <footer className="py-12 px-6 bg-slate-100">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
