@@ -5,68 +5,70 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { 
   ArrowRight, 
-  BarChart3, 
-  Shield, 
+  Brain, 
+  Zap, 
   Users, 
   TrendingUp, 
   CheckCircle,
   Building,
   Globe,
   Award,
-  Target
+  Target,
+  BarChart3,
+  Database
 } from "lucide-react";
 
-export default function FinancialServicesPage() {
+export default function AIMachineLearningPage() {
   const challenges = [
     {
-      title: "Regulatory Compliance",
-      description: "Navigate complex regulatory requirements across multiple jurisdictions",
-      icon: Shield
+      title: "Data Analytics",
+      description: "Transform raw data into actionable insights with advanced analytics",
+      icon: BarChart3
     },
     {
-      title: "Risk Management",
-      description: "Implement comprehensive risk assessment and mitigation strategies",
+      title: "Predictive Modeling",
+      description: "Implement machine learning models for forecasting and optimization",
       icon: Target
     },
     {
-      title: "Digital Banking",
-      description: "Transform customer experiences with modern digital platforms",
-      icon: Globe
+      title: "Process Automation",
+      description: "Automate complex business processes with intelligent workflows",
+      icon: Zap
     },
     {
-      title: "Operational Efficiency",
-      description: "Streamline processes while maintaining security and compliance",
-      icon: TrendingUp
+      title: "Intelligent Insights",
+      description: "Generate real-time insights and recommendations using AI",
+      icon: Brain
     }
   ];
 
   const solutions = [
     {
-      title: "ServiceNow for Financial Services",
-      description: "Complete ITSM, SecOps, and GRC solutions tailored for financial institutions",
-      features: ["IT Service Management", "Security Operations", "Governance, Risk & Compliance", "Customer Service Management"],
-      benefits: ["40% faster incident resolution", "Enhanced security posture", "Automated compliance reporting"]
+      title: "AI-Powered ServiceNow Solutions",
+      description: "Intelligent automation and machine learning capabilities integrated into ServiceNow platform",
+      features: ["Predictive Analytics", "Intelligent Automation", "AI-Driven Insights", "Smart Process Optimization"],
+      benefits: ["60% faster issue resolution", "Predictive maintenance capabilities", "Automated decision-making"]
     },
     {
-      title: "SAP Banking Solutions",
-      description: "Core banking, risk management, and analytics solutions for modern financial services",
-      features: ["SAP S/4HANA Finance", "SAP Risk Management", "SAP Analytics Cloud", "SAP Ariba"],
-      benefits: ["Real-time financial reporting", "Integrated risk management", "Improved customer insights"]
+      title: "SAP AI & Machine Learning",
+      description: "Advanced AI and ML solutions built on SAP platforms for intelligent business operations",
+      features: ["SAP AI Core", "Machine Learning Models", "Intelligent Data Processing", "Automated Workflows"],
+      benefits: ["Real-time predictive insights", "Automated business processes", "Enhanced decision accuracy"]
     }
   ];
 
   const caseStudies = [
     {
-      title: "Global Investment Bank Transformation",
-      challenge: "Legacy IT infrastructure causing operational inefficiencies and compliance risks",
-      solution: "Complete ServiceNow ITSM and SecOps implementation with custom workflows",
-      results: ["50% reduction in security incidents", "30% faster regulatory reporting", "95% user satisfaction"]
+      title: "Manufacturing AI Optimization",
+      challenge: "Manual quality control processes causing production delays and inconsistent quality",
+      solution: "AI-powered quality control system with computer vision and predictive analytics",
+      results: ["40% reduction in defects", "Real-time quality monitoring", "Predictive maintenance implementation"]
     },
     {
-      title: "Regional Bank Digital Modernization",
-      challenge: "Outdated core banking system limiting growth and customer experience",
-      solution: "SAP S/4HANA implementation with integrated analytics and customer management",
-      results: ["25% cost reduction", "Real-time transaction processing", "Enhanced customer experience"]
+      title: "Healthcare Predictive Analytics",
+      challenge: "Reactive patient care and resource allocation leading to inefficiencies",
+      solution: "Machine learning models for patient outcome prediction and resource optimization",
+      results: ["30% improvement in patient outcomes", "Optimized resource allocation", "Predictive health insights"]
     }
   ];
 
@@ -80,33 +82,33 @@ export default function FinancialServicesPage() {
           <ScrollAnimation className="text-center space-y-8">
             <ScrollAnimation delay={0.2}>
               <div className="flex items-center justify-center space-x-3 mb-6">
-                <BarChart3 className="h-8 w-8 text-primary" />
+                <Brain className="h-8 w-8 text-primary" />
                 <Badge variant="outline" className="text-primary border-primary/20">Industry</Badge>
               </div>
               <h1 className="text-5xl md:text-6xl font-light text-foreground leading-tight">
-                Financial
+                AI & Machine
                 <span className="block font-medium moondust-text-gradient">
-                  Services
+                  Learning
                 </span>
               </h1>
             </ScrollAnimation>
             <ScrollAnimation delay={0.4}>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Empowering financial institutions with secure, compliant, and innovative technology solutions 
-                that drive operational excellence and customer satisfaction.
+                Empowering organizations with cutting-edge AI and machine learning solutions 
+                that drive intelligent automation, predictive insights, and data-driven decision making.
               </p>
             </ScrollAnimation>
           </ScrollAnimation>
         </div>
       </section>
 
-      {/* Industry Challenges */}
+      {/* AI Challenges */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-6xl">
           <ScrollAnimation className="text-center mb-16">
-            <h2 className="text-3xl font-light text-foreground mb-4">Industry Challenges</h2>
+            <h2 className="text-3xl font-light text-foreground mb-4">AI Implementation Challenges</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Understanding the unique challenges facing financial services organizations
+              Understanding the key challenges in implementing AI and machine learning solutions
             </p>
           </ScrollAnimation>
           
@@ -130,13 +132,13 @@ export default function FinancialServicesPage() {
         </div>
       </section>
 
-      {/* Our Solutions */}
+      {/* Our AI Solutions */}
       <section className="py-16 px-6 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="container mx-auto max-w-6xl">
           <ScrollAnimation className="text-center mb-16">
-            <h2 className="text-3xl font-light text-foreground mb-4">Our Solutions</h2>
+            <h2 className="text-3xl font-light text-foreground mb-4">Our AI Solutions</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive technology solutions designed specifically for financial services
+              Comprehensive AI and machine learning solutions designed for enterprise transformation
             </p>
           </ScrollAnimation>
           
@@ -187,9 +189,9 @@ export default function FinancialServicesPage() {
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-6xl">
           <ScrollAnimation className="text-center mb-16">
-            <h2 className="text-3xl font-light text-foreground mb-4">Success Stories</h2>
+            <h2 className="text-3xl font-light text-foreground mb-4">AI Success Stories</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Real results from our financial services implementations
+              Real results from our AI and machine learning implementations
             </p>
           </ScrollAnimation>
           
@@ -207,7 +209,7 @@ export default function FinancialServicesPage() {
                       </div>
                       
                       <div>
-                        <h4 className="font-medium text-foreground mb-2">Solution</h4>
+                        <h4 className="font-medium text-foreground mb-2">AI Solution</h4>
                         <p className="text-sm text-muted-foreground">{study.solution}</p>
                       </div>
                       
@@ -236,22 +238,22 @@ export default function FinancialServicesPage() {
         <div className="container mx-auto max-w-4xl text-center">
           <ScrollAnimation>
             <h2 className="text-4xl font-light text-white mb-6">
-              Transform Your Financial Services Operations
+              Transform Your Business with AI
             </h2>
           </ScrollAnimation>
           <ScrollAnimation delay={0.2}>
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-              Let's discuss how our expertise can help your financial institution achieve 
-              operational excellence while maintaining security and compliance.
+              Let's discuss how our AI and machine learning expertise can drive intelligent 
+              automation and data-driven insights for your organization.
             </p>
           </ScrollAnimation>
           <ScrollAnimation delay={0.4}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="px-8 py-3">
-                Schedule Consultation
+                Schedule AI Consultation
               </Button>
               <Button size="lg" variant="outline" className="px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
-                Download Case Study
+                Download AI Case Study
               </Button>
             </div>
           </ScrollAnimation>

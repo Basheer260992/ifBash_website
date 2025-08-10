@@ -21,14 +21,6 @@ import Link from "next/link";
 export default function IndustriesPage() {
   const industries = [
     {
-      title: "Financial Services",
-      description: "Banking, insurance, and investment solutions with regulatory compliance and risk management",
-      icon: BarChart3,
-      href: "/industries/financial-services",
-      challenges: ["Regulatory Compliance", "Risk Management", "Digital Banking", "Customer Experience"],
-      color: "blue"
-    },
-    {
       title: "Healthcare",
       description: "Healthcare providers and life sciences with patient care optimization and compliance",
       icon: Heart,
@@ -67,6 +59,14 @@ export default function IndustriesPage() {
       href: "/industries/technology",
       challenges: ["Innovation", "Scalability", "DevOps", "Customer Success"],
       color: "indigo"
+    },
+    {
+      title: "AI & Machine Learning",
+      description: "AI-powered solutions and machine learning implementations for intelligent automation",
+      icon: BarChart3,
+      href: "/industries/ai-machine-learning",
+      challenges: ["Data Analytics", "Predictive Modeling", "Process Automation", "Intelligent Insights"],
+      color: "blue"
     }
   ];
 

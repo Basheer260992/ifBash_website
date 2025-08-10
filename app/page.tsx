@@ -25,16 +25,16 @@ export default function Home() {
           <ScrollAnimation className="text-center space-y-8">
             <ScrollAnimation delay={0.2}>
               <h1 className="text-5xl md:text-6xl font-light text-foreground leading-tight">
-                Transform Your Business with
+                AI-Powered Enterprise
                 <span className="block font-medium moondust-text-gradient">
-                  ServiceNow & SAP
+                  Solutions
                 </span>
               </h1>
             </ScrollAnimation>
             <ScrollAnimation delay={0.4}>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                We deliver enterprise-grade consulting services that streamline operations, 
-                enhance productivity, and drive digital transformation across your organization.
+                We deliver AI-powered enterprise solutions using ServiceNow and SAP platforms 
+                to automate processes, enhance decision-making, and accelerate digital transformation.
               </p>
             </ScrollAnimation>
             <ScrollAnimation delay={0.6}>
@@ -56,9 +56,9 @@ export default function Home() {
       <section className="py-16 px-6 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="container mx-auto max-w-6xl">
           <ScrollAnimation className="text-center mb-16">
-            <h2 className="text-3xl font-light text-foreground mb-4">Our Expertise</h2>
+            <h2 className="text-3xl font-light text-foreground mb-4">AI-Enhanced Platforms</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Specialized consulting services designed to maximize your technology investments
+              Intelligent automation and AI-driven insights across enterprise platforms
             </p>
           </ScrollAnimation>
           
@@ -74,21 +74,21 @@ export default function Home() {
                     <h3 className="text-2xl font-medium text-foreground">ServiceNow</h3>
                   </div>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Complete ServiceNow platform implementation, from ITSM and ITOM to HR Service Delivery 
-                    and custom application development.
+                    AI-powered ServiceNow solutions with intelligent automation, predictive analytics, 
+                    and machine learning capabilities for smarter IT operations.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-500" />
-                      <span className="text-sm text-foreground/80">IT Service Management</span>
+                      <span className="text-sm text-foreground/80">AI-Powered ITSM</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-500" />
-                      <span className="text-sm text-foreground/80">Security Operations</span>
+                      <span className="text-sm text-foreground/80">Intelligent Security Ops</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-500" />
-                      <span className="text-sm text-foreground/80">HR Service Delivery</span>
+                      <span className="text-sm text-foreground/80">Smart Process Automation</span>
                     </li>
                   </ul>
                   <Link href="/portfolio/servicenow">
@@ -111,21 +111,21 @@ export default function Home() {
                     <h3 className="text-2xl font-medium text-foreground">SAP</h3>
                   </div>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
-                    End-to-end SAP solutions including S/4HANA implementation, SuccessFactors, 
-                    and cloud migration strategies.
+                    AI-enhanced SAP solutions with intelligent ERP, machine learning analytics, 
+                    and automated business processes for data-driven decisions.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-500" />
-                      <span className="text-sm text-foreground/80">S/4HANA Implementation</span>
+                      <span className="text-sm text-foreground/80">Intelligent S/4HANA</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-500" />
-                      <span className="text-sm text-foreground/80">SuccessFactors HCM</span>
+                      <span className="text-sm text-foreground/80">AI-Driven Analytics</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-500" />
-                      <span className="text-sm text-foreground/80">Analytics Cloud</span>
+                      <span className="text-sm text-foreground/80">Machine Learning Insights</span>
                     </li>
                   </ul>
                   <Link href="/portfolio/sap">
@@ -152,12 +152,12 @@ export default function Home() {
           
           <StaggerContainer className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {[
-              { name: "Financial Services", icon: BarChart3 },
+              { name: "Technology", icon: BarChart3 },
               { name: "Healthcare", icon: Users },
               { name: "Manufacturing", icon: Settings },
               { name: "Retail", icon: Building },
               { name: "Public Sector", icon: Globe },
-              { name: "Technology", icon: Database },
+              { name: "AI & Machine Learning", icon: Database },
             ].map((industry) => (
               <StaggerItem key={industry.name}>
                 <div className="text-center group">
@@ -177,12 +177,12 @@ export default function Home() {
         <div className="container mx-auto max-w-4xl text-center">
           <ScrollAnimation>
             <h2 className="text-4xl font-light text-white mb-6">
-              Ready to Transform Your Business?
+              Ready to Embrace AI-Powered Transformation?
             </h2>
           </ScrollAnimation>
           <ScrollAnimation delay={0.2}>
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-              Let's discuss how our ServiceNow and SAP expertise can drive your digital transformation journey.
+              Let's discuss how our AI-enhanced ServiceNow and SAP solutions can accelerate your intelligent automation journey.
             </p>
           </ScrollAnimation>
           <ScrollAnimation delay={0.4}>
