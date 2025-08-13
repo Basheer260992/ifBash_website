@@ -39,14 +39,14 @@ const serviceItems = [
   {
     title: "ServiceNow Implementation",
     href: "/services/servicenow-implementation",
-    description: "End-to-end ServiceNow platform implementation and configuration",
+    description: "AI-powered ServiceNow platform implementation and configuration",
     icon: Settings,
   },
   {
-    title: "SAP Consulting",
-    href: "/services/sap-consulting",
-    description: "Comprehensive SAP solutions and enterprise integration",
-    icon: Database,
+    title: "AI Automation",
+    href: "/services/ai-automation",
+    description: "Intelligent process automation and machine learning solutions",
+    icon: BarChart3,
   },
   {
     title: "Digital Transformation",
@@ -57,74 +57,42 @@ const serviceItems = [
   {
     title: "Process Optimization",
     href: "/services/process-optimization",
-    description: "Business process analysis and optimization strategies",
-    icon: BarChart3,
+    description: "AI-driven business process analysis and optimization strategies",
+    icon: Target,
   },
 ];
 
 const portfolioItems = {
   servicenow: [
     {
-      title: "IT Service Management (ITSM)",
+      title: "AI-Powered ITSM",
       href: "/portfolio/servicenow/itsm",
-      description: "Incident, Problem, Change, and Service Request Management",
+      description: "Intelligent Incident, Problem, Change, and Service Request Management",
     },
     {
-      title: "IT Operations Management (ITOM)",
+      title: "Intelligent ITOM",
       href: "/portfolio/servicenow/itom",
-      description: "Discovery, Event Management, and Orchestration",
+      description: "AI-driven Discovery, Event Management, and Orchestration",
     },
     {
-      title: "Security Operations (SecOps)",
+      title: "AI Security Operations",
       href: "/portfolio/servicenow/secops",
-      description: "Vulnerability Response and Security Incident Response",
+      description: "Intelligent Vulnerability Response and Security Incident Response",
     },
     {
-      title: "HR Service Delivery",
+      title: "Smart HR Service Delivery",
       href: "/portfolio/servicenow/hrsd",
-      description: "Employee Service Center and HR Case Management",
+      description: "AI-enhanced Employee Service Center and HR Case Management",
     },
     {
-      title: "Customer Service Management",
+      title: "Intelligent Customer Service",
       href: "/portfolio/servicenow/csm",
-      description: "Customer Service Operations and Field Service Management",
+      description: "AI-powered Customer Service Operations and Field Service Management",
     },
     {
-      title: "App Engine & Development",
+      title: "AI App Engine & Development",
       href: "/portfolio/servicenow/app-engine",
-      description: "Custom Application Development and Platform Automation",
-    },
-  ],
-  sap: [
-    {
-      title: "SAP S/4HANA",
-      href: "/portfolio/sap/s4hana",
-      description: "Next-generation ERP suite implementation and migration",
-    },
-    {
-      title: "SAP SuccessFactors",
-      href: "/portfolio/sap/successfactors",
-      description: "Cloud-based Human Capital Management solutions",
-    },
-    {
-      title: "SAP Ariba",
-      href: "/portfolio/sap/ariba",
-      description: "Procurement and supply chain management solutions",
-    },
-    {
-      title: "SAP Concur",
-      href: "/portfolio/sap/concur",
-      description: "Travel and expense management solutions",
-    },
-    {
-      title: "SAP Analytics Cloud",
-      href: "/portfolio/sap/analytics-cloud",
-      description: "Business intelligence and analytics platform",
-    },
-    {
-      title: "SAP Integration",
-      href: "/portfolio/sap/integration",
-      description: "API management and system integration solutions",
+      description: "AI-driven Custom Application Development and Platform Automation",
     },
   ],
 };
@@ -213,10 +181,10 @@ export function Header() {
         {/* Logo */}
         <div className="flex items-center">
           <Link href="/" className="flex items-center space-x-3">
-            <div className="h-8 w-8 rounded moondust-gradient flex items-center justify-center moondust-glow">
-              <span className="text-white font-bold text-sm">TC</span>
+            <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg">
+              <span className="text-white font-bold text-lg">AI</span>
             </div>
-            <span className="font-semibold text-xl moondust-text-gradient">TechConsult</span>
+            <span className="font-bold text-2xl bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">AIConsult</span>
           </Link>
         </div>
 
@@ -252,42 +220,21 @@ export function Header() {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="w-[800px] p-4">
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 gap-6">
                       {/* ServiceNow */}
                       <div>
-                        <div className="flex items-center space-x-2 mb-3 pb-2 border-b border-border">
+                        <div className="flex items-center space-x-2 mb-4 pb-3 border-b border-border">
                           <Settings className="h-5 w-5 text-primary" />
-                          <h3 className="font-semibold text-foreground">ServiceNow</h3>
+                          <h3 className="font-bold text-lg bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">AI-Powered ServiceNow</h3>
                         </div>
                         <ul className="space-y-2">
                           {portfolioItems.servicenow.map((item) => (
                             <li key={item.title}>
                               <Link
                                 href={item.href}
-                                className="block p-2 rounded-md hover:bg-accent transition-colors"
+                                className="block p-3 rounded-lg hover:bg-blue-50 hover:border-blue-200 border border-transparent transition-all duration-200"
                               >
-                                <div className="text-sm font-medium text-foreground">{item.title}</div>
-                                <div className="text-xs text-muted-foreground mt-1">{item.description}</div>
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-
-                      {/* SAP */}
-                      <div>
-                        <div className="flex items-center space-x-2 mb-3 pb-2 border-b border-border">
-                          <Database className="h-5 w-5 text-chart-4" />
-                          <h3 className="font-semibold text-foreground">SAP</h3>
-                        </div>
-                        <ul className="space-y-2">
-                          {portfolioItems.sap.map((item) => (
-                            <li key={item.title}>
-                              <Link
-                                href={item.href}
-                                className="block p-2 rounded-md hover:bg-accent transition-colors"
-                              >
-                                <div className="text-sm font-medium text-foreground">{item.title}</div>
+                                <div className="text-sm font-semibold text-foreground">{item.title}</div>
                                 <div className="text-xs text-muted-foreground mt-1">{item.description}</div>
                               </Link>
                             </li>
@@ -398,27 +345,13 @@ export function Header() {
                   </Link>
                   <div className="pl-4 space-y-3">
                     <div>
-                      <div className="text-sm font-medium text-foreground mb-2">ServiceNow</div>
+                      <div className="text-sm font-semibold text-foreground mb-2">AI-Powered ServiceNow</div>
                       <div className="space-y-1">
                         {portfolioItems.servicenow.slice(0, 3).map((item) => (
                           <Link
                             key={item.title}
                             href={item.href}
-                            className="block text-xs text-muted-foreground hover:text-foreground"
-                          >
-                            {item.title}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                    <div>
-                      <div className="text-sm font-medium text-foreground mb-2">SAP</div>
-                      <div className="space-y-1">
-                        {portfolioItems.sap.slice(0, 3).map((item) => (
-                          <Link
-                            key={item.title}
-                            href={item.href}
-                            className="block text-xs text-muted-foreground hover:text-foreground"
+                            className="block text-xs text-muted-foreground hover:text-blue-600"
                           >
                             {item.title}
                           </Link>
